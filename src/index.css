@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Amatic SC';
+  src: url('/fonts/AmaticSC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'Amatic SC', 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Premium Design System Tokens */
+  --bg-page: #fafaf9;
+  /* Stone-50 */
+  --bg-surface: #ffffff;
+  --text-primary: #1c1917;
+  /* Stone-900 */
+  --text-secondary: #57534e;
+  /* Stone-600 */
+  --text-accent: #78716c;
+  /* Stone-500 */
+
+  --color-gold: #d4af37;
+  /* Classic Gold */
+  --color-gold-dim: #c5a028;
+
+  --radius-card: 24px;
+  --radius-button: 9999px;
+
+  /* Elegant Light Theme Defaults */
+  color-scheme: light;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utilities */
+.font-serif-heading {
+  font-family: 'Amatic SC', serif;
+}
+
+.font-sans-body {
+  font-family: 'Amatic SC', sans-serif;
+}
+
+/* Scalable Type Classes (using CSS variables injected by React) */
+.text-scale-hero {
+  font-size: calc(3rem * var(--font-scale-hero, 1));
+}
+
+@media (min-width: 768px) {
+  .text-scale-hero {
+    font-size: calc(4.5rem * var(--font-scale-hero, 1));
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-scale-hero {
+    font-size: calc(6rem * var(--font-scale-hero, 1));
+  }
+}
+
+.text-scale-heading {
+  font-size: calc(1.5rem * var(--font-scale-heading, 1));
+}
+
+@media (min-width: 768px) {
+  .text-scale-heading {
+    font-size: calc(2.25rem * var(--font-scale-heading, 1));
+  }
+}
+
+.text-scale-body {
+  font-size: calc(1rem * var(--font-scale-body, 1));
+}
+
+@media (min-width: 768px) {
+  .text-scale-body {
+    font-size: calc(1.125rem * var(--font-scale-body, 1));
+  }
+}
+
+.text-scale-small {
+  font-size: calc(0.75rem * var(--font-scale-small, 1));
+}
+
+@media (min-width: 768px) {
+  .text-scale-small {
+    font-size: calc(0.875rem * var(--font-scale-small, 1));
+  }
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.premium-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.premium-button-primary {
+  background-color: var(--text-primary);
+  color: white;
+  border-radius: var(--radius-button);
+  padding: 12px 32px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.premium-button-primary:hover {
+  background-color: black;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.premium-button-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-button);
+  padding: 12px 32px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.premium-button-outline:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

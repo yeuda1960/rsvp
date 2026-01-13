@@ -1,0 +1,8 @@
+﻿src/pages/admin/premium-invitation-preview.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/pages/invite/premium.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/premium-invitation/components/AudioController.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/premium-invitation/components/EventDetailsCard.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/premium-invitation/components/IntroOverlay.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/premium-invitation/components/LottiePlayer.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/premium-invitation/components/LottiePlayer.tsx(17,45): error TS2307: Cannot find module 'lottie-web' or its corresponding type declarations.
+src/premium-invitation/components/OpeningAnimation.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
