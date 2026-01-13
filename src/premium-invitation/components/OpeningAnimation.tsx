@@ -34,7 +34,7 @@ export function OpeningAnimation({
     if (asset.type === "lottie") {
         return (
             <div className="w-full max-w-[420px] mx-auto text-center">
-                <LottiePlayer url={asset.url} loop={false} />
+                <LottiePlayer src={asset.url} loop={false} />
                 <div
                     className="inline-flex items-center justify-center w-12 h-12 rounded-full text-sm font-serif border border-black/10 text-black/40 mt-6"
                     style={{ borderColor: `${accent}40`, color: accent }}

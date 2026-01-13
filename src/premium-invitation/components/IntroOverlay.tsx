@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { OpeningAnimation } from "./OpeningAnimation";
-import { type PremiumInvitationConfig } from "../config/types"; // Fixed import path
+import { type PremiumInvitationConfig } from "../config/types";
 
 interface IntroOverlayProps {
     config: PremiumInvitationConfig;

@@ -32,23 +32,15 @@ export function EventDetailsCard({
 
     return (
         <div className="premium-card p-10 md:p-14 text-center transition-transform hover:scale-[1.01] duration-700 w-full max-w-2xl mx-auto relative group-card overflow-hidden">
-            {/* Lottie Decorations - Rotated horizontal strips tiled to cover height */}
-            <div className="absolute top-1/2 -left-[150px] -translate-y-1/2 w-[300px] h-[600px] pointer-events-none flex flex-row z-0 opacity-80 mix-blend-multiply origin-center">
-                <div className="w-full h-full relative">
-                    <LottiePlayer
-                        src="/premium/lottie/event-side-decoration.json"
-                        className="w-full h-full object-contain -rotate-90 scale-[1.5]"
-                    />
-                </div>
+            {/* Floral Frame - Full Card Border */}
+            <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+                <LottiePlayer
+                    src="/premium/lottie/event-side-decoration.json"
+                    className="absolute inset-0 w-full h-full opacity-65 scale-105"
+                    rendererSettings={{ preserveAspectRatio: "xMidYMid slice" }}
+                />
             </div>
-            <div className="absolute top-1/2 -right-[150px] -translate-y-1/2 w-[300px] h-[600px] pointer-events-none flex flex-row z-0 opacity-80 mix-blend-multiply origin-center">
-                <div className="w-full h-full relative">
-                    <LottiePlayer
-                        src="/premium/lottie/event-side-decoration.json"
-                        className="w-full h-full object-contain rotate-90 scale-[1.5]"
-                    />
-                </div>
-            </div>
+
 
             <div className="space-y-12 relative z-10">
                 {/* HEADLINES */}
